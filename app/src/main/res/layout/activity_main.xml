@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcul d'IMC"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prenom"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/etPoids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Poids (Kg)"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etTaille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Taille (m)"
+        android:inputType="numberDecimal"/>
+
+    <RadioGroup
+        android:id="@+id/rgSexe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/rbHomme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homme"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbFemme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femme"
+            android:layout_marginStart="32dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalculer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULER"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
